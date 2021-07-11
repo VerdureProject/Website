@@ -16,7 +16,7 @@ body{
     flex-direction: column;
 }
 
-.verdure-image{
+.verdure-logo{
     width: 500px;
 }
 
@@ -62,6 +62,10 @@ body{
     margin: 30px;
 }
 
+.footer--link-pics *{
+    margin: 0 3px;
+}
+
 .verdure-os--link-pics *{
     margin: 0 10px;
 }
@@ -98,7 +102,7 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    .verdure-image{
+    .verdure-logo{
         width: 100vw;
     }
 }
