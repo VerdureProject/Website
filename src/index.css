@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 2;
+}
+
+.main-image{
+    height: 40vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.verdure-logo{
+    width: 500px;
+}
+
+.main-content{
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: auto 150px 150px 150px 150px 150px 150px auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". about about about about about about ."
+        ". verdure-os verdure-os verdure-os verdure-os verdure-os verdure-os .";
+    margin: 30px auto 30px auto;
+}
+
+.project-about{
+    grid-area: about;
+    text-align: center;
+}
+
+.verdure-os{
+    grid-area: verdure-os;
+    text-align: center;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". footer .";
+    margin: auto;
+}
+
+.footer--content{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    margin: 30px;
+}
+
+.footer--link-pics *{
+    margin: 0 3px;
+}
+
+.verdure-os--link-pics *{
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 900px){
+    .main-content{
+        min-height: 40vh;
+        margin: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "about"
+        "verdure-os";
+    }
+    .footer {
+        background-color: black;
+        color: white;
+        height: 200px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "footer";
+    }
+    .footer--content{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .verdure-logo{
+        width: 100vw;
+    }
+}
